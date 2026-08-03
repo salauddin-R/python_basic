@@ -1,5 +1,6 @@
 #List Data -- this is mutable or changable
 listData = [1,2,3,4,5,6,7,8,9]
+listData.pop(3)
 print(listData)
 listData[0]=99
 print(listData)
@@ -7,7 +8,7 @@ print(listData)
 
 #Tuple Data -- this is immutable or unchangeable
 tupleData = (1,2,3,4,5,6,7,8) #this use parent thesis or ()
-#trupleData[2]=4 #truple unchangeable
+# trupleData[2]=4 #truple unchangeable
 print(tupleData)
 
 #range -- take 0 t0 rangeData-1
