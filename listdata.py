@@ -43,3 +43,15 @@ x = fruits.count("cherry")
 print(x)
 x = fruits.index("apple")
 print(x)
+
+#Add two tuple
+thistuple = ("apple", "banana", "cherry")
+y = ("orange",)
+thistuple += y
+print(thistuple)
+
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+(green, yellow, *red) = fruits
+print(green)
+print(yellow)
+print(red)
