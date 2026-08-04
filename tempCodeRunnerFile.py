@@ -1,61 +1,109 @@
-temperature = 22
+def arbitrary_arg(*data2):
+#     data=0
+#     for i in data2:
+#         data+=i
+#     print(f"total data is {data}")
 
-if temperature > 30:
-  print("It's hot outside!")
-elif temperature > 20:
-  print("It's warm outside")
-elif temperature > 10:
-  print("It's cool outside")
-else:
-  print("It's cold outside!")
 
-a = 330
-b = 330
-print("A") if a > b else print("=") if a == b else print("B")
+# arbitrary_arg(1,2,3,4,5)
 
-age = 25
-is_student = False
-has_discount_code = True
+# def Arbitrary_kwargs(**myData):
+#     print(f"My name is {myData["name"]}")
+#     print(f"My age is {myData["age"]}")
+#     print(f"My village is {myData["village"]}")
 
-if (age < 18 or age > 65) and not is_student or has_discount_code:
-  print("Discount applies!")
+# Arbitrary_kwargs(name="Salauddin",age=23,village="nurnagar")
 
-scorse = 75
-if scorse>=90:
-    print("Grade A++")
-elif scorse>=80:
-    print("Grade:A+")
-elif scorse>=70:
-    print("Grade: B")
-else:
-    print("you are fail")    
+# def my_function(title, *args, **kwargs):
+#   print("Title:", title)
+#   print("Positional arguments:", args)
+#   print("Keyword arguments:", kwargs)
 
-a=90
-b=100
-c=a if a>b else b
-print("c = ",c)
+# my_function("User Info", "Emil", "Tobias", age = 25, city = "Oslo")
 
-age = 25
-is_student = False
-has_discount_code = True
+# def my_Unpacking_Dictionaries(fname,lname):
+#     print(f"My firs name is {fname}")
+#     print(f"My lname name is {lname}")
 
-if (age < 18 or age > 65) and not is_student or has_discount_code:
-  print("Discount applies!")
+# person = {"fname":"Salauddin","lname":"Rony"}
+# my_Unpacking_Dictionaries(**person)
 
-value = 0
-if value < 0:
-  print("Negative value")
-elif value == 0:
-  pass #not do any thing
-else:
-  print("Positive value")
+# x = 300
+# def myfunc():
+#   global x
+#   x = 200
+# myfunc()
+# print(x)
 
-month = 4
-day = 4
-match day:
-  case 1 | 2 | 3 | 4 | 5 if month == 4:
-    print("A weekday in April")
-  case 1 | 2 | 3 | 4 | 5 if month == 5:
-    print("A weekday in May")
-  case _:
-    print("No match")
+# def myFun():
+#     x = "Jane"
+#     def myFunc():
+#         nonlocal x
+#         x="Hello"
+#     myFunc()
+#     return x
+# print(myFun())
+
+# x = "global"
+
+# def outer():
+#   x = "enclosing"
+#   def inner():
+#     x = "local"
+#     print("Inner:", x)
+#   inner()
+#   print("Outer:", x)
+
+# outer()
+# print("Global:", x)
+
+# def changecase(func):
+#   def myinner():
+#     return func().upper()
+#   return myinner
+
+# @changecase
+# def myfunction():
+#   return "Hello Sally"
+
+# @changecase
+# def otherfunction():
+#   return "I am speed!"
+
+# print(myfunction())
+# print(otherfunction())
+
+# def changecase(n):
+#   def changecase(func):
+#     def myinner():
+#       if n == 1:
+#         a = func().lower()
+#       else:
+#         a = func().upper()
+#       return a
+#     return myinner
+#   return changecase
+
+# @changecase(1)
+# def myfunction():
+#   return "Hello Linus"
+
+# print(myfunction())
+
+# numbers = [1,2,3,4,5]
+# doubled = list(map(lambda x:x*2,numbers))
+# print(doubled)
+
+# students = [("Emil", 25), ("Tobias", 22), ("Linus", 28)]
+# sorted_students = sorted(students, key=lambda x: x[1])
+# print(sorted_students)
+
+# def my_Yield():
+#     yield 1
+#     yield 2
+#     yield 3
+#     yield 4
+#     yield 5
+
+# for i in my_Yield():
+#     print(i)
