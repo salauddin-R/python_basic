@@ -59,3 +59,8 @@ match day:
     print("A weekday in May")
   case _:
     print("No match")
+
+for i in range(2,100,10):
+    if i==12:
+      continue
+    print(i)
