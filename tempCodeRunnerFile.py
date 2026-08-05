@@ -1,1 +1,1 @@
-p2 = class4()
+self,
